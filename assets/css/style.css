@@ -1,0 +1,215 @@
+/*CSS resets*/
+
+* {
+    padding: 0%;
+    border:0px;
+    text-decoration: none;
+    /* border: 1px #fff solid; */
+    color: #fff;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    
+
+}
+
+body {
+    background-color: #141414;
+    width: 100%;
+    height: auto;
+}
+
+main {
+    /* background-color: brown; */
+}
+
+/*Inicio Cabeçalho*/
+header {
+    /* background-color: aqua; */
+    align-items: center;
+}
+
+header nav {
+    /* background-color: darkcyan; */
+    display: flex;
+    align-items: center;
+    height: auto;
+
+}
+
+
+
+header nav #netflixLogo {
+    height: 45px;
+    width: 120px;
+    margin-left: 2%;
+}
+
+/*Lado Esquerdo*/
+header nav #ladoEsquerdo {
+    /* background-color:aqua; */
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    
+}
+
+header nav #ladoEsquerdo #navegacao {
+    display: flex;
+    flex-direction: row;
+    /* background-color:blueviolet; */
+    width: 40%;
+    justify-content: space-evenly;
+    
+}
+
+header nav #ladoEsquerdo {
+    /* background-color:aqua; */
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    align-items: center;
+    
+}
+
+header nav a{
+    color: #e4e4e4ff;
+    font-size: 13px;
+    
+}
+
+/* Lado direito */
+header nav #ladoDireito {
+    /* background-color:aqua; */
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.iconsNav {
+    width: 25px;
+    height: 25px;
+}
+
+
+.imagemAvatar {
+    width: 8%;
+    height: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5%;
+
+}
+.imagemAvatar #avatar {
+    height: 100%;
+    width: 100%;
+    border-radius: 10%;
+}
+
+.imagemAvatar #cetinha {
+    height: 50%;
+    width: 50%;
+    margin: 10px;
+}
+/*Fim Cabeçalho*/
+
+/*Início container*/
+#container {
+    width: 100%;
+}
+
+#videoPrincipal{
+    height: auto;
+    width: 100%;
+    
+}
+
+#videoPrincipal video{
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    z-index: -1; 
+}
+
+#textsFilmePrincipal {
+    position: relative;
+    margin-top: 10%;
+    margin-left: 15%;
+    width: 35%;
+    
+}
+
+#textsFilmePrincipal h1 {
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-size: 50px;
+}
+
+#textsFilmePrincipal p{
+   width: 100%;
+}
+
+#textsFilmePrincipal #botoes {
+    height: auto;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 100%;
+
+
+}
+
+#textsFilmePrincipal #botoes #buttonAssistir {
+    display: flex;
+    color: black;
+    background-color: #FFF;
+    width: 40%;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    
+}
+
+#textsFilmePrincipal #botoes #buttonAssistir h5{
+    color: black; 
+    width: 40%;
+    font-size: 15px;
+}
+
+#textsFilmePrincipal #botoes #maisInformacoes {
+    display: flex;
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    width: 55%;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    opacity: 80%;
+    justify-content: space-evenly;
+}
+
+#textsFilmePrincipal #botoes #maisInformacoes h5 {
+    color: rgb(255, 255, 255); 
+    width: 50%;
+    font-size: 15px;
+    margin-left: 3%;
+}
+
+#divTop10 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#top10 {
+    height: 35px;
+    width: 35px;
+    margin-right: 2%;
+    border-radius: 5px;
+}
+    
+footer {
+    /* background-color:blueviolet; */
+}    
