@@ -20,9 +20,7 @@ body {
     overflow-x: hidden;
 }
 
-main {
-    /* background-color: brown; */
-}
+
 
 /*Inicio Cabeçalho*/
 header {
@@ -60,9 +58,11 @@ header nav #ladoEsquerdo #navegacao {
     flex-direction: row;
     /* background-color:blueviolet; */
     width: 40%;
-    justify-content: space-evenly;
+    justify-content: space-between;
     
 }
+
+
 
 header nav #ladoEsquerdo {
     /* background-color:aqua; */
@@ -120,6 +120,7 @@ header nav #ladoDireito {
 /*Início container*/
 #container {
     width: 100%;
+    padding: 3%;
 }
 
 #videoPrincipal{
@@ -131,7 +132,7 @@ header nav #ladoDireito {
 #videoPrincipal::after {
     content: '';
     position: absolute;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(55, 54, 54, 0));
     pointer-events: none;
 }
 
@@ -147,8 +148,7 @@ header nav #ladoDireito {
 
 #textsFilmePrincipal {
     position: relative;
-    margin-top: 10%;
-    margin-left: 5%;
+    margin-bottom: 3%;
     width: 35%;
     
 }
@@ -163,60 +163,55 @@ header nav #ladoDireito {
 }
 
 #textsFilmePrincipal #botoes {
-    height: auto;
     display: flex;
     width: 100%;
     justify-content: space-between;
-    height: 100%;
-
-
+    height: auto; 
+    gap: 10px; 
+    
 }
 
 #textsFilmePrincipal #botoes #buttonAssistir {
     display: flex;
     color: black;
     background-color: #FFF;
-    width: 40%;
+    width: 40%; 
     border-radius: 5px;
     align-items: center;
     justify-content: center;
-    justify-content: space-evenly;
-    height: 50%;
-    
+    padding: 5px 10px; 
+    font-size: 14px; 
+    gap: 8px; 
 }
 
-#textsFilmePrincipal #botoes #buttonAssistir h5{
+#textsFilmePrincipal #botoes #buttonAssistir h5 {
     color: black; 
-    width: 40%;
-    font-size: 15px;
+    margin: 0;
 }
 
 #textsFilmePrincipal #botoes #maisInformacoes {
     display: flex;
-    color: rgb(255, 255, 255);
-    background-color: #000000;
-    width: 50%;
+    color: #FFF;
+    background-color: #000;
+    width: 60%; 
     border-radius: 5px;
-    justify-content: center;
-    opacity: 80%;
-    justify-content: space-evenly;
     align-items: center;
-    height: 50%;
-}
-
-
-#textsFilmePrincipal #botoes #maisInformacoes #imgMaisInformacoes {
-    width: 18%;
-    height: 50%;
-    margin-left: 8%;
+    justify-content: center;
+    padding: 5px 10px; 
+    font-size: 14px; 
+    gap: 8px; 
 }
 
 #textsFilmePrincipal #botoes #maisInformacoes h5 {
-    color: rgb(255, 255, 255); 
-    width: 75%;
-    font-size: 15px;
-    margin-left: 3%;
+    color: #FFF;
+    margin: 0;
 }
+
+#textsFilmePrincipal #botoes img {
+    width: 40px; /* Reduz o tamanho do ícone */
+    height: 100%;
+}
+
 
 #divTop10 {
     display: flex;
@@ -230,7 +225,92 @@ header nav #ladoDireito {
     margin-right: 2%;
     border-radius: 5px;
 }
+#cardsFilme {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1px; /* Espaçamento entre os cards */
+}
+
+.imgCapa {
+    width:   220px;
+    height:   125px;
+}
+
+.card {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card progress {
+    width: 50%; /* Ajuste da largura da barra de progresso */
+    height: 2.5px; /* Diminui a altura da barra de progresso */
+    margin-top: 10px;
+    appearance: none; /* Remove o estilo padrão */
+}
+
+.card progress::-webkit-progress-bar {
+    background-color: #5b5b5b; /* Cor do fundo da barra */
+
+}
+
+.card progress::-webkit-progress-value {
+    background-color: red; /* Cor vermelha da barra de progresso */
+    
+}
+
+.card progress::-moz-progress-bar {
+    background-color: red; /* Cor vermelha da barra de progresso para Firefox */
+    
+}
+
     
 footer {
-    /* background-color:blueviolet; */
-}    
+    box-sizing: border-box;
+    margin-top: 2%;
+
+    width: 100%;
+    height: auto;
+    padding: 2%;
+    opacity: 80%;
+}
+
+footer #centro {
+    width: 60%;
+    margin: auto;
+
+}
+
+
+ #redes .imgsredes {
+    margin: 1%;
+ }
+footer #links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 3%;
+    margin-left: 0%;
+    font-size: 80%;
+   
+}
+
+footer p {
+    margin-top: 3%;
+    font-size: 60%;
+}
+
+
+
+footer #codServico {
+    box-sizing: border-box;
+    border: 1px #fff solid;
+    padding: 5px;
+    overflow: hidden;
+    font-size: 80%;
+}
